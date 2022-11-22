@@ -34,35 +34,56 @@
 
 ////////////////////////////////////////////////////////////////////////////
 
-const abudrahman = "Abdurahman";
-const selmanovic = "Selmanovic";
-const godine = 14;
-const skola = "Bratstvo";
+// const abudrahman = "Abdurahman";
+// const selmanovic = "Selmanovic";
+// const godine = 14;
+// const skola = "Bratstvo";
 
-const person = {
-  abudrahman: abudrahman,
-  selmanovic: selmanovic,
-  godine: godine,
-  skola: skola,
-};
-console.log(person);
+// const person = {
+//   abudrahman: abudrahman,
+//   selmanovic: selmanovic,
+//   godine: godine,
+//   skola: skola,
+// };
+// console.log(person);
 
-// Ako imamo isti name i value:
-const person2 = {
-  abudrahman,
-  selmanovic,
-  godine,
-  skola,
-};
-console.log(person2);
-// Destructuring:
-const automobil = {
-  marka: "Audi",
-  model: "Q7",
-  marka: "Bela",
-};
-console.log(automobil.model);
+// // Ako imamo isti name i value:
+// const person2 = {
+//   abudrahman,
+//   selmanovic,
+//   godine,
+//   skola,
+// };
+// console.log(person2);
+// // Destructuring:
+// const automobil = {
+//   marka: "Audi",
+//   model: "Q7",
+//   marka: "Bela",
+// };
+// console.log(automobil.model);
 
-// const marka = automobil.marka
-const { marka, model } = automobil; // Destructuring
-console.log(marka, model);
+// // const marka = automobil.marka
+// const { marka, model } = automobil; // Destructuring
+// console.log(marka, model);
+
+//////////////////////////////////////////////////////////////////
+
+const godine = [
+  { starost: 19 },
+  { starost: 19 },
+  { starost: 19 },
+  { starost: 18 },
+  { starost: 16 },
+  { starost: 18 },
+  { starost: 14 },
+  { starost: 17 },
+];
+
+// Napraviti novi niz(punoletni) koji ce sadrzati one elemente (objekte) cija je starost veca od 17.
+const punoletni = godine.filter((element) => element.starost > 17);
+console.log(punoletni);
+
+// Napraviti niz objekata, gde ce svaki objekat sadrzati:
+// ime, prezime, starost, bojaOciju, bojaKose, polozenC.
+//  Napraviti funkciju koja pravi novi niz koji ce sadrzati one elemente cija boja ociju je braon i koji nisu polozili C.
