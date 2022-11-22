@@ -1,28 +1,36 @@
-//
+const automobil = {
+  marka: "Audi",
+  model: "Q7",
+  boja: "Bela",
+  pogon: "quattro",
+  menjac: "Automatik",
+  km: 240000,
+  vlasnik: ["062321552", "063930630"],
+  garaza: {
+    parking: "JKP Servis",
+    vikend: "od 17 free",
+    satnaKarta: 50,
+    dnevnaKarta: 200,
+    mesecnaKarta: 2000,
+  },
+};
+// Napraviti funkciju koja ce povecati vrednost satne, dnevne i mesecne karte za po 20%.
+// Za bilo koji objekat koji ima properties: satnaKarta, dnevnaKarta i mesecnaKarta.
+// Nakon toga je primeniti za automobil objekat i ispisati automobil nakon toga.
 
-// destructuring assignment mdn
+function povecajZa20() {
+  this.satnaKarta += this.satnaKarta * 0.2;
+  this.dnevnaKarta += this.dnevnaKarta * 0.2;
+  this.mesecnaKarta += this.mesecnaKarta * 0.2;
+  return {
+    satnaKarta: this.satnaKarta,
+    dnevnaKarta: this.dnevnaKarta,
+    mesecnaKarta: this.mesecnaKarta,
+  };
+}
 
-// object metode frezze
-//imamo app1, 1app2, app3
+console.log(povecajZa20.call(automobil.garaza));
+console.log(automobil);
 
-const godine = [
-  { starost: 19 },
-  { starost: 19 },
-  { starost: 19 },
-  { starost: 14 },
-  { starost: 19 },
-  { starost: 17 },
-  { starost: 16 },
-  { starost: 18 },
-];
-//punoletne izdvojiti
-//filer-pravimo novi niz
-//array metode call apply bind map filter reduce
+////////////////////////////////////////////////////////////////////////////
 
-const newArr = godine.filter((el) => el.starost > 17);
-
-console.log(newArr);
-
-//Napravi niz objekata gde ce svaki objekat sadrzat:
-// ime, prezime, starost, bojaOciju, bojaKose, polozenC(bool).
-//func pravi novi niz koji ce sadrzati one el cija boja ociju je braon i koji nisu polozili c
