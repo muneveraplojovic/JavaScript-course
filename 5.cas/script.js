@@ -23,7 +23,7 @@
 //   this.dnevnaKarta += this.dnevnaKarta * 0.2;
 //   this.mesecnaKarta += this.mesecnaKarta * 0.2;
 //   return {
-//     satnaKarta: this.satnaKarta,
+//     satnaKarta: this.satnaKarta,d
 //     dnevnaKarta: this.dnevnaKarta,
 //     mesecnaKarta: this.mesecnaKarta,
 //   };
@@ -69,21 +69,67 @@
 
 //////////////////////////////////////////////////////////////////
 
-const godine = [
-  { starost: 19 },
-  { starost: 19 },
-  { starost: 19 },
-  { starost: 18 },
-  { starost: 16 },
-  { starost: 18 },
-  { starost: 14 },
-  { starost: 17 },
-];
+// const godine = [
+//   { starost: 19 },
+//   { starost: 19 },
+//   { starost: 19 },
+//   { starost: 18 },
+//   { starost: 16 },
+//   { starost: 18 },
+//   { starost: 14 },
+//   { starost: 17 },
+// ];
 
-// Napraviti novi niz(punoletni) koji ce sadrzati one elemente (objekte) cija je starost veca od 17.
-const punoletni = godine.filter((element) => element.starost > 17);
-console.log(punoletni);
+// // Napraviti novi niz(punoletni) koji ce sadrzati one elemente (objekte) cija je starost veca od 17.
+// const punoletni = godine.filter((element) => element.starost > 17);
+// console.log(punoletni);
 
-// Napraviti niz objekata, gde ce svaki objekat sadrzati:
+// // Napraviti niz objekata, gde ce svaki objekat sadrzati:
 // ime, prezime, starost, bojaOciju, bojaKose, polozenC.
 //  Napraviti funkciju koja pravi novi niz koji ce sadrzati one elemente cija boja ociju je braon i koji nisu polozili C.
+
+//////////////////////////////////////homework
+
+const person1 = [
+  { name: "Munevera" },
+  { lastName: "Plojovic" },
+  { age: 18 },
+  { bojaOciju: "braon" },
+  { bojaKose: "braon" },
+  { polozenC: true },
+];
+
+const person2 = [
+  { name: "Munevera" },
+  { lastName: "Plojovic" },
+  { age: 18 },
+  { bojaOciju: "braon" },
+  { bojaKose: "braon" },
+  { polozenC: true },
+];
+
+const person3 = [
+  { name: "Munevera" },
+  { lastName: "Plojovic" },
+  { age: 18 },
+  { bojaOciju: "braon" },
+  { bojaKose: "braon" },
+  { polozenC: true },
+];
+
+const person4 = [
+  { name: "Munevera" },
+  { lastName: "Plojovic" },
+  { age: 18 },
+  { bojaOciju: "braon" },
+  { bojaKose: "braon" },
+  { polozenC: true },
+];
+
+function newObject(){
+  ispit = this.polozenC
+  if(ispit){
+    return "polozeeennn ccccc"
+  }
+}
+newObject()
