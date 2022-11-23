@@ -88,48 +88,5 @@
 // ime, prezime, starost, bojaOciju, bojaKose, polozenC.
 //  Napraviti funkciju koja pravi novi niz koji ce sadrzati one elemente cija boja ociju je braon i koji nisu polozili C.
 
-//////////////////////////////////////homework
-
-const person1 = [
-  { name: "Munevera" },
-  { lastName: "Plojovic" },
-  { age: 18 },
-  { bojaOciju: "braon" },
-  { bojaKose: "braon" },
-  { polozenC: true },
-];
-
-const person2 = [
-  { name: "Munevera" },
-  { lastName: "Plojovic" },
-  { age: 18 },
-  { bojaOciju: "braon" },
-  { bojaKose: "braon" },
-  { polozenC: true },
-];
-
-const person3 = [
-  { name: "Munevera" },
-  { lastName: "Plojovic" },
-  { age: 18 },
-  { bojaOciju: "braon" },
-  { bojaKose: "braon" },
-  { polozenC: true },
-];
-
-const person4 = [
-  { name: "Munevera" },
-  { lastName: "Plojovic" },
-  { age: 18 },
-  { bojaOciju: "braon" },
-  { bojaKose: "braon" },
-  { polozenC: true },
-];
-
-function newObject(){
-  ispit = this.polozenC
-  if(ispit){
-    return "polozeeennn ccccc"
-  }
-}
-newObject()
+////////////////////////////////////// 
+//homework
