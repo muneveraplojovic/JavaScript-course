@@ -13,10 +13,6 @@ const osoba = {
   polozenC: true,
   godine: 18,
 };
-// person.prezime="Dautovic"
-// console.log(person);
-// Object.freeze(person)
-// person.prezime="Jasarovic"
 // console.log(person);
 //freeze() - immutabile - cini objekat nepromenljvim
 //delete sluzi za brisanje i ne pravi rupe kao sto to radi kod array-a
