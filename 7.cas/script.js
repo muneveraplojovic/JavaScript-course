@@ -54,61 +54,31 @@
 
 ////////////////////////////////////
 
-// Napraviti funkciju koja nam vraca novi niz koji nema duplikata:
+//  2. Zadatak
+// Complete the code for the squareList function using any combination
+// of map(), filter(), and reduce(). The function should return a new array
+//  containing the squares of only the positive integers
+//  (decimal numbers are not integers) when an array of real numbers is passed to it.
+//   An example of an array of real numbers is [-3, 4.8, 5, 3, -3.2].
 
-const niz = [12, 1, 3, 2, 3, 4, 6, 4];
-const eraseDuplicate = function (arr) {
-  const newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (!newArr.includes(arr[i])) {
-      newArr.push(arr[i]);
-    }
-  }
-  return newArr;
-};
-console.log(eraseDuplicate(niz));
-
-// ...spread operator nam sluzi za pravljenje kopije niza ili objekta, kao i spajanje vise nizova (objekata).
-
-const niz1 = ["sto", "stolica", "tabla", "marker"];
-const niz2 = [...niz1];
-console.log(niz2);
-niz2[1] = "fotelja";
-console.log(niz2);
-console.log(niz1);
-// Spajanje vise nizova
-const niz3 = [...niz, ...niz1];
-console.log(niz3);
-const niz4 = [15, ...niz2, 150];
-console.log(niz4);
-
-const obj = {
-  ime: "Muhamed",
-  prezime: "Krkmisevic",
-  starost: 17,
-};
-const newObj = {
-  ...obj,
-  bojaKose: "crna",
-  kovrdzav: false,
-};
-console.log(newObj);
-
-// Napraviti funkciju koja vraca novi niz, gde je svaki element objekat sa vrednostima title i budget.
-const movies = [
-  { title: "Inception", rating: 8, budget: "230M" },
-  { title: "Interstelar", rating: 5, budget: "200M" },
-  { title: "Godfather", rating: 9, budget: "280M" },
-  { title: "Home Alone", rating: 4, budget: "300M" },
-  { title: "Bad boys", rating: 8, budget: "180M" },
-];
-function just2(arr) {
-  const newArr = arr.map(function (element) {
-    return {
-      title: element.title,
-      budget: element.budget,
-    };
+const niz = [-3, 4.8, 5, 3, -3.2];
+const squareList = (arr) => {
+  const filtered = arr.filter(function (number) {
+    return number > 0 && number % 1 === 0;
   });
-  return newArr;
-}
-console.log(just2(movies));
+  const squares = filtered.map(function (number) {
+    return number ** 2;
+  });
+  return squares;
+};
+
+console.log(squareList(niz));
+const a = 14;
+const b = 14.15;
+// console.log(a % 1 === 0);
+// console.log(b % 1 === 0);
+
+// Number.isInteger() metoda varaca boolean u zavisnosti od toga da li je argument date metode ceo broj ili nije.
+
+console.log(Number.isInteger(a));
+console.log(Number.isInteger(b));
