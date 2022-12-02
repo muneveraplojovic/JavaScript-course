@@ -39,20 +39,24 @@
 // console.log(newObj);
 
 // Napraviti funkciju koja vraca novi niz, gde je svaki element objekat sa vrednostima title i budget.
-const movies = [
-  { title: "Inception", rating: 8, budget: "230M" },
-  { title: "Interstelar", rating: 5, budget: "200M" },
-  { title: "Godfather", rating: 9, budget: "280M" },
-  { title: "Home Alone", rating: 4, budget: "300M" },
-  { title: "Bad boys", rating: 8, budget: "180M" },
-];
-function just2(arr) {
-  const newArr = arr.map(function (element) {
-    return {
-      title: element.title,
-      budget: element.budget,
-    };
-  });
-  return newArr;
-}
-console.log(just2(movies));
+// const movies = [
+//   { title: "Inception", rating: 8, budget: "230M" },
+//   { title: "Interstelar", rating: 5, budget: "200M" },
+//   { title: "Godfather", rating: 9, budget: "280M" },
+//   { title: "Home Alone", rating: 4, budget: "300M" },
+//   { title: "Bad boys", rating: 8, budget: "180M" },
+// ];
+// function just2(arr) {
+//   const newArr = arr.map(function (element) {
+//     return {
+//       title: element.title,
+//       budget: element.budget,
+//     };
+//   });
+//   return newArr;
+// }
+// console.log(just2(movies));
+
+
+niz=[1,2,2,3,4,5,6,7,8,9]
+console.log(niz);
