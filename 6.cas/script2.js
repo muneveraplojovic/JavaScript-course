@@ -152,20 +152,22 @@
 //  (decimal numbers are not integers) when an array of real numbers is passed to it.
 //   An example of an array of real numbers is [-3, 4.8, 5, 3, -3.2].
 
-const sqrArray = function (arr) {
-  const positive = arr.filter((num) => {
-    return num > 0;
-  });
-  const integer = positive.map((n) => {
-    if (n === Math.floor(n)) return n ** 2;
-  });
-  return integer
- // return ` Niz koji zadovoljava date uslove je ${integer}`;
-};
+// const sqrArray = function (arr) {
+//   const positiveIntegers = arr.filter((num) => {
+//     return num > 0;
+//   });
+//   const int=positive.filter((n)=>{Number.isInteger(n)})
+//   const square= int ** 2;
+//   return square;
+//   };
+//   // console.log(integer.length);
+//   // return ` Niz koji zadovoljava date uslove je ${integer}`;
+// ;
 
-console.log(sqrArray([-3, 4.8, 5, 3, -3.2]));
+// console.log(sqrArray([-3, 4.8, 5, 3, -3.2]));
 
 //parseInt
 //Math.ceil
 //Math.floor
 //~~
+//isInteger

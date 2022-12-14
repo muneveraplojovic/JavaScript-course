@@ -150,7 +150,9 @@ function povecanja() {
   this.satnaKarta += this.satnaKarta * 0.2;
   this.dnevnaKarta += this.dnevnaKarta * 0.2;
   this.mesecnaKarta += this.mesecnaKarta * 0.2;
-  return `nove vrednosti karte su: ${this.satnaKarta} ${this.dnevnaKarta} ${this.mesecnaKarta} `;
+  return{
+    satnaKarta: this.satnaKarta
+  };
 }
 
 console.log(povecanja.call(automobil.garaza));

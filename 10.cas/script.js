@@ -53,3 +53,6 @@ const person = {
   console.log(mojAuto);
   mojAuto.jeUdaran();
   console.log(mojAuto);
+
+  
+  
