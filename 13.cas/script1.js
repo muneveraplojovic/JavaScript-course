@@ -1,12 +1,12 @@
 //hash mapa
 //steak
 
-import React from 'react'
+// import React from 'react'
 
-function script1() {
-  return (
-    <div>script1</div>
-  )
-}
+// function script1() {
+//   return (
+//     <div>script1</div>
+//   )
+// }
 
-export default script1
+// export default script1
