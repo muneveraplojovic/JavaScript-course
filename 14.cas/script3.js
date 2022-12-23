@@ -39,4 +39,3 @@ fruits.forEach((val, key) => {
 
 //enteries - vraca interator u obliku key-value
 console.log(fruits.entries());
-

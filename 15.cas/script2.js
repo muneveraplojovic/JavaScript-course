@@ -12,3 +12,5 @@ const zbir = function (arg1, arg2) {
   // export default zbir
   
   // export default mozemo iskoristiti samo jednom u fajlu.
+
+  

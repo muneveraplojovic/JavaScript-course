@@ -34,6 +34,3 @@ function getNewArray(arg) {
   return [...newArray];
 }
 console.log(getNewArray(array));
-
-
-
