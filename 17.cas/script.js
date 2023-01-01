@@ -8,7 +8,8 @@
 //     console.log(5);
 // }, 1000)
 
-//Promise - je js objekat koji predstavlja mesto za rezultate async func sve dok traje izvrsavanje async operacije.
+//Promise - je js objekat koji predstavlja mesto za rezultate async func sve dok traje
+//izvrsavanje async operacije.
 //catch, finally, then
 
 // const imatiCas = new Promise((resolve, reject) => {
@@ -39,19 +40,41 @@
 //     console.log("poruka koja se ispituje u svakom slucaju");
 //   });
 
-const isArray = new Promise((resolve, reject) => {
-  const array = ["nesto", 5, false, "?", 45];
-  if (Array.isArray(array)) {
-    resolve();
+// const isArray = new Promise((resolve, reject) => {
+//   const array = ["nesto", 5, false, "?", 45];
+//   if (Array.isArray(array)) {
+//     resolve();
+//   } else {
+//     reject();
+//   }
+// });
+
+// isArray
+//   .then(() => {
+//     console.log("Array is array :)");
+//   })
+//   .catch(() => {
+//     console.log("Greska :(");
+//   });
+
+const promise = new Promise((resolve, reject) => {
+  const person = {
+    fistName: "Munevera",
+    lastName: "Plojovic",
+    age: 19,
+  };
+
+  if (person.age > 17) {
+    resolve("Punoletni ste!");
   } else {
-    reject();
+    reject(person.age);
   }
 });
 
-isArray
-  .then(() => {
-    console.log("Array is array :)");
+promise
+  .then((arg1) => {
+    console.log(arg1);
   })
-  .catch(() => {
-    console.log("Greska :(");
+  .catch((arg2) => {
+    console.log(arg2);
   });
