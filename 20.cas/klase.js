@@ -54,36 +54,36 @@ console.log(newUser);
 
 console.log("---------------------");
 
-class AdditionalInfo extends User {
-  stateArr = [
-    { state: "USA", cId: "+1" },
-    { state: "UK", cId: "+44" },
-    { state: "Mexico", cId: "+52" },
-    { state: "India", cId: "+91" },
-    { state: "China", cId: "+86" },
-    { state: "Serbia", cId: "+381" },
-  ];
-
-  constructor(adress, city, state, phoneNumber) {
-    super(User.name, User.lastName, User.dateOfBirth, User.age);
-    this.adress = adress;
-    this.city = city;
-    this.state = state;
-    this.phoneNumber = phoneNumber;
-    this.number = this.changeNum(this.state, this.phoneNumber);
-  }
-
-  changeNum(state, phoneNumber) {
-    this.findState = this.stateArr.find((s) => s.state === state);
-    return phoneNumber.replace(phoneNumber[0], this.findState.cId);
-  }
-}
-
-const addition = new AdditionalInfo(
-  "Avnoja bb",
-  "Novi Pazar",
-  "Serbia",
-  "0631782150"
-);
-
-console.log(addition);
+// class AdditionalInfo extends User {
+//   stateArr = [
+//     { state: "USA", cId: "+1" },
+//     { state: "UK", cId: "+44" },
+//     { state: "Mexico", cId: "+52" },
+//     { state: "India", cId: "+91" },
+//     { state: "China", cId: "+86" },
+//     { state: "Serbia", cId: "+381" },
+//   ];
+  
+//   constructor(adress, city, state, phoneNumber) {
+//       super(User.name, User.lastName, User.dateOfBirth, User.age);
+//       this.adress = adress;
+//       this.city = city;
+//       this.state = state;
+//       this.phoneNumber = phoneNumber;
+//       this.number = this.changeNum(this.state, this.phoneNumber);
+//     }
+    
+//     changeNum(state, phoneNumber) {
+//         this.findState = this.stateArr.find((s) => s.state === state);
+//         return phoneNumber.replace(phoneNumber[0], this.findState.cId);
+//     }
+// }
+// const addition = new AdditionalInfo(
+//     "Avnoja bb",
+//     "Novi Pazar",
+//     "Serbia",
+//     "0631782150"
+//     );
+    
+//     console.log(addition);
+//     console.log("---------------");
