@@ -12,6 +12,10 @@
 //   setTimeout(() => console.log(i)), 0;
 // }
 
+//zadatak za interviju
+//prvo se izvrsvaju svi promisi koji imaju sinhronu radnju, pa potom oni koji imaju asinhronu
+//redosled: 1 3 2 
+
 const promise = new Promise((resolve, reject) => {
   resolve();
 });
